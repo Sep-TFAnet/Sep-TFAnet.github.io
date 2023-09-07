@@ -446,12 +446,20 @@ td, th {
 }
 
 .table-container {
-    
-    justify-content: center;  /* For horizontal centering */
+
+
+	width: 100%; /* Table will take up full width of its container */
+    max-width: 100%; /* Ensures the table doesn't grow larger than its container */
+    border-collapse: collapse;
 	overflow-x: auto; /* Adds horizontal scrollbar if table is wider than container */
-    width: 100%; /* Or you can set a specific width */
 } 
 
+/* .table-container {
+    width: 100%; /* Table will take up full width of its container */
+    max-width: 100%; /* Ensures the table doesn't grow larger than its container */
+    border-collapse: collapse;
+	overflow-x: auto; /* Adds horizontal scrollbar if table is wider than container */
+} */
 .media-container {
     text-align: center; /* Center the text */
     margin: 20px;       /* Spacing around the container, adjust as needed */
@@ -510,6 +518,6 @@ body::before {
 }
 
 
-/* * {
-    border: 1px solid red;  /* Temporarily adds borders to all elements 
-}*/
+* {
+    border: 1px solid red;  /* Temporarily adds borders to all elements */
+}

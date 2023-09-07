@@ -143,7 +143,7 @@ hr {
 	border-color: #121d1f;
 }
 /* Header Section */
-/* .intro {
+.intro {
 	display: table;
 	width: 100%;
 	padding: 0;
@@ -155,7 +155,7 @@ hr {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-} */
+}
 .section-title.center {
 	padding: 10px 0 40px 0;
 }
@@ -446,11 +446,9 @@ td, th {
 }
 
 .table-container {
-    
+    display: flex;
     justify-content: center;  /* For horizontal centering */
-	overflow-x: auto; /* Adds horizontal scrollbar if table is wider than container */
-    width: 100%; /* Or you can set a specific width */
-} 
+}
 
 .media-container {
     text-align: center; /* Center the text */
@@ -510,6 +508,6 @@ body::before {
 }
 
 
-/* * {
-    border: 1px solid red;  /* Temporarily adds borders to all elements 
-}*/
+* {
+    border: 1px solid red;  /* Temporarily adds borders to all elements */
+}

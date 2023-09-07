@@ -446,11 +446,10 @@ td, th {
 }
 
 .table-container {
-    
+    display: flex;
     justify-content: center;  /* For horizontal centering */
-	overflow-x: auto; /* Adds horizontal scrollbar if table is wider than container */
-    width: 100%; /* Or you can set a specific width */
-} 
+	padding: 10%;
+}
 
 .media-container {
     text-align: center; /* Center the text */
@@ -510,6 +509,6 @@ body::before {
 }
 
 
-/* * {
-    border: 1px solid red;  /* Temporarily adds borders to all elements 
-}*/
+* {
+    border: 1px solid red;  /* Temporarily adds borders to all elements */
+}
