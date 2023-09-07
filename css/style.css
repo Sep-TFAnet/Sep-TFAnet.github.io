@@ -512,7 +512,7 @@ body::before {
 
 /* * {
     border: 1px solid red;  /* Temporarily adds borders to all elements 
-}*/
+} */
 
 .highlight {
     color: red;  /* Choose any color you like */
@@ -521,4 +521,29 @@ body::before {
 .plain-text {
     color: black;       /* Sets text color to black */
     font-weight: bold; /* Ensures text is not bold */
+}
+
+
+caption {
+    text-align: left;
+}
+
+.title-caption {
+    font-weight: bold; /* If you want the title to be bold */
+    font-size: 25px;
+    width: 100%; /* Ensures the title takes the full width of the table */
+	color: black;
+
+}
+
+.legend .item {
+    margin-left: 1em; /* Indent for 'Read Word' and 'Asterik' */
+}
+.legend {
+    margin-left: 1em; /* Indent for 'Read Word' and 'Asterik' */
+}
+
+.right-caption caption {
+    text-align: left;
+    padding-left: 5%;
 }
