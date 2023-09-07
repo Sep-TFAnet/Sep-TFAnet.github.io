@@ -143,7 +143,7 @@ hr {
 	border-color: #121d1f;
 }
 /* Header Section */
-.intro {
+/* .intro {
 	display: table;
 	width: 100%;
 	padding: 0;
@@ -155,7 +155,7 @@ hr {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
+} */
 .section-title.center {
 	padding: 10px 0 40px 0;
 }
@@ -448,7 +448,9 @@ td, th {
 .table-container {
     display: flex;
     justify-content: center;  /* For horizontal centering */
-}
+	overflow-x: auto; /* Adds horizontal scrollbar if table is wider than container */
+    width: 100%; /* Or you can set a specific width */
+} 
 
 .media-container {
     text-align: center; /* Center the text */
@@ -507,47 +509,7 @@ body::before {
     opacity: 0.3; /* Adjust to desired opacity level, 0.5 is 50% opacity */
 }
 
-/* for responsive table in mobile view */
 
-/* Default styles for larger screens */
-.responsive-table {
-    width: 100%;
-    border-collapse: collapse;
+* {
+    border: 1px solid red;  /* Temporarily adds borders to all elements */
 }
-
-.responsive-table th, .responsive-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-/* Styles for smaller screens (e.g., mobile devices) */
-@media (max-width: 767px) {
-    .responsive-table thead {
-        display: none; /* hide headers */
-    }
-
-    .responsive-table tr {
-        margin-bottom: 0.6em;
-        display: block;
-        border: 1px solid #ddd;
-    }
-
-    .responsive-table td {
-        display: block;
-        position: relative;
-        padding-left: 50%;
-        margin-bottom: 1em;
-        border: none;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .responsive-table td::before {
-        content: attr(data-label);
-        position: absolute;
-        top: 0;
-        left: 10px;
-        font-weight: bold;
-    }
-}
-
-/* for responsive table in mobile view */
