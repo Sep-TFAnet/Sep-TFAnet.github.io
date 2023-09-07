@@ -446,7 +446,7 @@ td, th {
 }
 
 .table-container {
-    display: flex;
+    
     justify-content: center;  /* For horizontal centering */
 	overflow-x: auto; /* Adds horizontal scrollbar if table is wider than container */
     width: 100%; /* Or you can set a specific width */
