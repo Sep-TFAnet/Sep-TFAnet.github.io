@@ -513,3 +513,12 @@ body::before {
 /* * {
     border: 1px solid red;  /* Temporarily adds borders to all elements 
 }*/
+
+.highlight {
+    color: red;  /* Choose any color you like */
+}
+
+.plain-text {
+    color: black;       /* Sets text color to black */
+    font-weight: bold; /* Ensures text is not bold */
+}
