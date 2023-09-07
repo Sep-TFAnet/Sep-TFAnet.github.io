@@ -506,3 +506,48 @@ body::before {
     /* Transparency effect */
     opacity: 0.3; /* Adjust to desired opacity level, 0.5 is 50% opacity */
 }
+
+/* for responsive table in mobile view */
+
+/* Default styles for larger screens */
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .responsive-table thead {
+        display: none; /* hide headers */
+    }
+
+    .responsive-table tr {
+        margin-bottom: 0.6em;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .responsive-table td {
+        display: block;
+        position: relative;
+        padding-left: 50%;
+        margin-bottom: 1em;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-weight: bold;
+    }
+}
+
+/* for responsive table in mobile view */

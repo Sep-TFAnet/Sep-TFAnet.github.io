@@ -7,8 +7,7 @@
 
     <title>Sep-TFAnetVAD</title>
     
-    <meta name="description" content="Project Page for LipVoicer">
-    
+    <meta name="description" content="Project Page for Sep-TFAnetVAD">
     <meta name="author" content="">
 
     <link rel="stylesheet" href="css/fontawesome.all.min.css">
@@ -68,19 +67,21 @@
       
           <div class="col-md-10 col-md-offset-1">
 
-                <p style="color:black; font-family:Sans-Serif; font-size:16px">                         
-                  Speech separation involves extracting an individual speaker's voice from a
-                  multi-speaker audio signal. The increasing complexity of real-world environments,
-                  where multiple speakers might converse simultaneously, underscores the importance
-                  of effective speech separation techniques.
-                  This work presents a single-microphone speaker separation network combined with voice activity
-                  detection aiming at noisy and reverberant environments, Sep-TFAnet<sup>VAD</sup>. The proposed network comprises a separation module and a VAD module. The separation module is based
-                  on a TCN backbone,
-                  inspired by the Conv-Tasnet architecture with multiple modifications. Rather than a
-                  learned encoder and decoder, we use  STFT and iSTFT for the analysis and synthesis, respectively. Our system is specially developed for human-robotic interactions and should support online mode. 
-                  %Furthermore, the combined architecture provides systemic solutions when VAD can be involved in audio scene processing. 
-                  The separation capabilities of Sep-TFAnet<sup>VAD</sup> were evaluated and extensively analyzed under several acoustic conditions, demonstrating its performance advantages over competing methods. 
-                  Since separation networks trained on simulated data tend to perform poorly on real recordings, we also demonstrate the ability of the proposed scheme to better generalize to realistic examples recorded in our acoustic lab by a humanoid robot.
+                <p style="color:black; font-family:Sans-Serif; font-size:16px">  
+                    Speech separation involves extracting an individual speaker's voice from a multi-speaker audio signal.
+                    The increasing complexity of real-world environments, where multiple speakers might converse simultaneously,
+                    underscores the importance of effective speech separation techniques.
+                    This work presents a single-microphone speaker separation network with TF attention aiming at noisy and reverberant
+                    environments.
+                    We dub this new architecture as Sep-TFAnet. In addition, we present a variant of the separation network, 
+                    dubbed Sep-TFAnet<sup>VAD</sup> VAD, which incorporates a VAD into the separation network.
+                    The separation module is based on a TCN backbone inspired by the Conv-Tasnet architecture with multiple modifications. 
+                    Rather than a learned encoder and decoder, we use  STFT and iSTFT for the analysis and synthesis, respectively.
+                    Our system is specially developed for human-robotic interactions and should support online mode. 
+                    The separation capabilities of Sep-TFAnet<sup>VAD</sup> and Sep-TFAnet were evaluated and extensively
+                    analyzed under several acoustic conditions, demonstrating their advantages over competing methods. 
+                    Since separation networks trained on simulated data tend to perform poorly on real recordings,
+                    we also demonstrate the ability of the proposed scheme to better generalize to realistic examples recorded in our acoustic lab by a humanoid robot.
                 </p> <br><hr><br>
       
           </div>
@@ -97,7 +98,7 @@
       <p style="color:black; font-family:Sans-Serif; font-size:24px;"> Samples from our robot dataset </p>
         <br><br> 
         <div class="table-container">
-        <table border="1">
+        <table border="1" >
             <thead>
                 <tr>
                     <th style="color:black; font-weight: bold; font-size: 20px;">Mix</th>
@@ -111,7 +112,7 @@
                 <!-- row 1 -->
                 <tr>
                     <!-- mix column -->
-                    <td>
+                    <td data-label="Here is the datalabel MIx">
                         
                             <!-- <div class="media-title"><u>Spk1:</u></div>
                             <div class="media-content">
@@ -129,6 +130,7 @@
                         <audio controls>
                             <source src="/partial_audio_samples_robot_rt60_350_our/sample101/Mixed.wav" type="audio/wav">
                         </audio>
+                       
 
                         <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_mixed.png"
                         alt="Description for Image 2" 
