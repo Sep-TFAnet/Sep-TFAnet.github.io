@@ -556,7 +556,10 @@ caption {
 }
 
 .eql-cntrb {
-    font-size: smaller;
+    color: hsl(0, 0%, 7%) !important;
+    font-size: 17px;
+    font-family: 'Google Sans', sans-serif;
+    /* color: #4286f4; This rule is commented out and won't be applied */
 }
 
 .institution {
@@ -581,6 +584,9 @@ caption {
 }
 
 .publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+.publication-authors a {
     font-family: 'Google Sans', sans-serif;
 }
 
