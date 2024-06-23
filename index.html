@@ -460,6 +460,342 @@
         </table>
     </div>
 
+
+    <!-- another table of LibriCSS -->
+
+            <br><br> 
+        <div class="table-container">
+        <table border="1" class="right-caption">
+            <!-- <caption style="color:black; font-family:Sans-Serif; font-size:24px;">Samples from our robot dataset <br> Legend: <span>Read words: bla <br>Asterik: bla</span></caption> -->
+            
+                <!-- Your content goes here -->
+            
+            <caption>
+                <div class="title-caption">Samples from LibriCSS dataset</div>
+                <div class="legend">
+                    <u>Legend:</u>
+                    <div class="item"><span class="highlight">Red Words</span> - Wrong words</div>
+                    <div class="item">Asterisk (*) - Missing words</div>
+                </div>
+            </caption>
+        
+            <thead>
+                <tr>
+                    <th style="color:black; font-weight: bold; font-size: 20px;">Mix</th>
+                    <th style="color:black; font-weight: bold; font-size: 20px;">Clean</th>
+                    <th style="color:black; font-weight: bold; font-size: 20px;">Sep-TFAnet Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- We'll create 10 similar rows -->
+                <!-- row 1 -->
+                <tr>
+                    <!-- mix column -->
+                    <td>
+                        
+                            <!-- <div class="media-title"><u>Spk1:</u></div>
+                            <div class="media-content">
+                                <audio controls>
+                                    <source src="/partial_audio_samples_robot_rt60_350_our/sample101/Mixed.wav" type="audio/wav">
+                                </audio>
+                                <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_mixed.png" 
+                        alt="Description for Image 2" 
+                        style="display: block; margin: 10px auto;" height="200">
+                                
+                            </div> -->
+                        
+                        <!-- <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;">overlap ratio = 36%:</span> -->
+                        <br>
+                        <audio controls>
+                            <source src="\libricss_results\sample0\Mixed.wav" type="audio/wav">
+                        </audio>
+                       
+
+                        <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_mixed.png"
+                        alt="Description for Image 2" 
+                        style="display: block; margin: 10px auto;" height="200"> -->
+                        <p class="plain-text">1st as a paris stt broker later as a celebrated author and yachtsman he went on frequent voyages
+                             construction and were installed by the construction company.
+                              that had been organized by edison to build and equipped central stations. </p>
+                        
+                    </td>
+                    <!-- clean column -->
+                    <td>
+                        <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+                        <br>
+
+                        <audio controls>
+                            <source src="/partial_audio_samples_robot_rt60_350_our/sample101/Target1.wav" type="audio/wav">
+                        </audio>
+
+                        <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_clean0.png" 
+                        alt="Description for Image 2" 
+                        style="display: block; margin: 10px auto;" height="200"> -->
+                        <p class="plain-text"> 1st as a paris stock broker later as a celebrated author and yachtsman he went on frequent voyages to britain america the mediterranean</p>
+                        <br>
+                        <!-- <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span> -->
+                        <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+                        <br>
+                        <audio controls>
+                            <source src="/partial_audio_samples_robot_rt60_350_our/sample101/Target2.wav" type="audio/wav">
+                        </audio>
+                        <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_clean1.png" 
+                        alt="Description for Image 2" 
+                        style="display: block; margin: 10px auto;" height="200"> -->
+                        <p class="plain-text">the street conductors were of the overhead pole line construction and were installed by the construction company
+                             that had been organized by edison to build and equipped central stations</p>
+                        
+                    </td>
+                    <!-- sep our column -->
+                    <td>
+                        <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+                        <br>
+
+                        <audio controls>
+                            <source src="\libricss_results\sample0\Speaker1.wav" type="audio/wav">
+                        </audio>
+
+                        <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_out0.png" 
+                        alt="Description for Image 2" 
+                        style="display: block; margin: 10px auto;" height="200"> -->
+                        <p class="plain-text">1st as a paris stock broker later as <span class="highlight">A</span> celebrated author and yachtsman he went on
+                            frequent voyages to britain america the mediterranean</p>
+
+                        <br>
+                        <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+                        <br>
+                        <audio controls>
+                            <source src="\libricss_results\sample0\Speaker2.wav" type="audio/wav">
+                        </audio>
+                        <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample101/our_out1.png" 
+                        alt="Description for Image 2" 
+                        style="display: block; margin: 10px auto;" height="200"> -->
+                        <p class="plain-text">the street conductors were ** the overhead **** line construction and were installed by the construction company that had been organized by edison to b
+                            uild and equipped central stations</p>
+                    </td>
+                         <!-- sep conv column -->
+                    
+                    <!-- row 2 -->
+                </tr>
+                <!-- mix column -->
+                <td>
+                    <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;">overlap ratio = 45%:</span>
+                    <!-- <span class="spaced-span">overlap ratio = 45%:</span> -->
+                <br>
+                <audio controls>
+                    <source src="\libricss_results\sample1\Mixed.wav" type="audio/wav">
+                </audio>
+
+                <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample8/our_mixed.png"
+                alt="Description for Image 2" 
+                style="display: block; margin: 10px auto;" height="200"> -->
+                <p class="plain-text">it he has no traditions to bind him or guide him and his impulse to break away from the occupation Himself
+                    but he gives us different sorts of Work according as he fits us for it and calls us to it </p>
+            </td>
+            <!-- clean column -->
+            <td>
+                <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+                <br>
+
+                <audio controls>
+                    <source src="/partial_audio_samples_robot_rt60_350_our/sample8/Target1.wav" type="audio/wav">
+                </audio>
+
+                <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample8/our_clean0.png" 
+                alt="Description for Image 2" 
+                style="display: block; margin: 10px auto;" height="200"> -->
+                <p class="plain-text">he has no traditions to bind him or guide him and his impulse is to
+                     break away from the occupation his father has followed and make a new way for himself.</p>
+                <br>
+                <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+                <br>
+                <audio controls>
+                    <source src="/partial_audio_samples_robot_rt60_350_our/sample8/Target2.wav" type="audio/wav">
+                </audio>
+                <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample8/our_clean1.png" 
+                alt="Description for Image 2" 
+                style="display: block; margin: 10px auto;" height="200"> -->
+                <p class="plain-text">we can all be servants of god wherever our lot is cast but he gives us
+                     different sorts of work according as he fits us for it and calls us to it.</p>
+            </td>
+            <!-- sep our column -->
+            <td>
+                <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+                <br>
+
+                <audio controls>
+                    <source src="\libricss_results\sample1\Speaker1.wav" type="audio/wav">
+                </audio>
+
+                <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample8/our_out0.png" 
+                alt="Description for Image 2" 
+                style="display: block; margin: 10px auto;" height="200"> -->
+                <p class="plain-text">he has no traditions to bind him or guide him and his impulse <span class="highlight">IS</span> to break away from the occupation his father has followed and make
+                    a new way for himself</p>
+                <br>
+                <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+                <br>
+                <audio controls>
+                    <source src="\libricss_results\sample1\Speaker1.wav" type="audio/wav">
+                </audio>
+                <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample8/our_out1.png" 
+                alt="Description for Image 2" 
+                style="display: block; margin: 10px auto;" height="200"> -->
+                <p class="plain-text">we can <span class="highlight">ONLY</span> be servants of god wherever our <span class="highlight">LIFE is TEST</span> but he gives us different
+                     sorts of work <span class="highlight">RECORDING</span> as 
+                    he fits us for it and calls us to it</p>
+            </td>
+                 <!-- sep conv column -->
+            
+
+                <!-- row 3 -->
+            </tr>
+            <!-- mix column -->
+            <td>
+                
+                <!-- <span class="spaced-span">overlap ratio = 32%:</span> -->
+                <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;">overlap ratio = 32%:</span>
+            <br>
+            <audio controls>
+                <source src="\libricss_results\sample2\Mixed.wav" type="audio/wav">
+            </audio>
+
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_mixed.png"
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text">It is a gleaner Bringing down her one sheaf of corn to an Old Water Mill itself Mossy in rent Scarcely able to get its
+                 stones to and think i showed him by my mode of address that i did not bear any grudge as to my individual self </p>
+        </td>
+        <!-- clean column -->
+        <td>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+            <br>
+
+            <audio controls>
+                <source src="/partial_audio_samples_robot_rt60_350_our/sample14/Target1.wav" type="audio/wav">
+            </audio>
+
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_clean0.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text">it is a gleaner bringing down her one sheaf of corn to an old watermill itself mossy and rent scarcely able to get its stones to turn</p>
+            <br>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+            <br>
+            <audio controls>
+                <source src="/partial_audio_samples_robot_rt60_350_our/sample14/Target2.wav" type="audio/wav">
+            </audio>
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_clean1.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text">as i spoke i made him a gracious bow and i think i showed him by my mode of address that i did not bear any grudge as to my individual self.</p>
+        </td>
+        <!-- sep our column -->
+        <td>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+            <br>
+
+            <audio controls>
+                <source src="\libricss_results\sample2\Speaker1.wav" type="audio/wav">
+            </audio>
+
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_out0.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text"> it is a gleaner bringing down her one sheaf of corn to an old water mill itself mossy
+                 in rent scarcely able to get its stones to <span class="highlight">TIME
+                    ANY GRUDGE</span></p> 
+            <br>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+            <br>
+            <audio controls>
+                <source src="\libricss_results\sample2\Speaker2.wav" type="audio/wav">
+            </audio>
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_out1.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text"><span class="highlight">RIGHT</span> as <span class="highlight">YOU</span> spoke I made him a gracious bow and I think i showed him by my mode of address that i did not bea
+                r any <span class="highlight">PLEDGE</span> as to my individual self</p>
+        </td>
+             
+
+             <!-- row 4 -->
+            </tr>
+            <!-- mix column -->
+            <td>
+                
+                <!-- <span class="spaced-span">overlap ratio = 32%:</span> -->
+                <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;">overlap ratio = 32%:</span>
+            <br>
+            <audio controls>
+                <source src="\libricss_results\sample3\Mixed.wav" type="audio/wav">
+            </audio>
+
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_mixed.png"
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text">It is a gleaner Bringing down her one sheaf of corn to an Old Water Mill itself Mossy in rent Scarcely able to get its
+                 stones to and think i showed him by my mode of address that i did not bear any grudge as to my individual self </p>
+        </td>
+        <!-- clean column -->
+        <td>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+            <br>
+
+            <audio controls>
+                <source src="/partial_audio_samples_robot_rt60_350_our/sample14/Target1.wav" type="audio/wav">
+            </audio>
+
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_clean0.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text">it is a gleaner bringing down her one sheaf of corn to an old watermill itself mossy and rent scarcely able to get its stones to turn</p>
+            <br>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+            <br>
+            <audio controls>
+                <source src="/partial_audio_samples_robot_rt60_350_our/sample14/Target2.wav" type="audio/wav">
+            </audio>
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_clean1.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text">as i spoke i made him a gracious bow and i think i showed him by my mode of address that i did not bear any grudge as to my individual self.</p>
+        </td>
+        <!-- sep our column -->
+        <td>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 1:</u></span>
+            <br>
+
+            <audio controls>
+                <source src="\libricss_results\sample3\Speaker1.wav" type="audio/wav">
+            </audio>
+
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_out0.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text"> it is a gleaner bringing down her one sheaf of corn to an old water mill itself mossy
+                 in rent scarcely able to get its stones to <span class="highlight">TIME
+                    ANY GRUDGE</span></p> 
+            <br>
+            <span class="spaced-span" style="color:black; font-weight: bold; font-size: 17px;" ><u>speaker 2:</u></span>
+            <br>
+            <audio controls>
+                <source src="\libricss_results\sample3\Speaker2.wav" type="audio/wav">
+            </audio>
+            <!-- <img src="/partial_audio_samples_robot_rt60_350_our/sample14/our_out1.png" 
+            alt="Description for Image 2" 
+            style="display: block; margin: 10px auto;" height="200"> -->
+            <p class="plain-text"><span class="highlight">RIGHT</span> as <span class="highlight">YOU</span> spoke I made him a gracious bow and I think i showed him by my mode of address that i did not bea
+                r any <span class="highlight">PLEDGE</span> as to my individual self</p>
+        </td>
+        
+
+
+
+            </tbody>
+        </table>
+    </div>
+
   	
 
 </div>
